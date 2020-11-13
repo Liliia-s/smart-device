@@ -1,3 +1,119 @@
 .site-header {
-  background: url("../img/");
+  padding-top: 33px;
+  background: url("../img/back-promo-desk.png") #1b2d37 no-repeat;
+}
+
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  padding-right: 156px;
+}
+
+.site-header__logo-wrapper::before,
+.site-header__logo-wrapper::after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  right: 0;
+  width: 37px;
+  height: 1px;
+  background: url("../img/dash.svg") no-repeat;
+}
+
+.site-header__logo-wrapper::after {
+  transform: translateY(12px);
+}
+
+.site-header__logo-wrapper a {
+  padding-right: 15px;
+}
+
+.site-header__title {
+  @include reset-margin;
+  padding-bottom: 5px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 25px;
+  line-height: 29.3px;
+  font-weight: 700;
+  color: $color-white;
+}
+
+.site-header__tagline {
+  @include reset-margin;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 500;
+  color: $color-grey;
+}
+
+.site-header__user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-header__user-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 53px;
+}
+
+.site-header__user-item {
+  &:not(:last-child) {
+    margin-right: 71px;
+  }
+}
+
+.site-header__user-item a {
+  position: relative;
+  padding-left: 50px;
+  line-height: 17.92px;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    color: $color-blue-light;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-white;
+  }
+
+  &:active svg {
+    fill-opacity: 0.5;
+  }
+}
+
+.site-header__user-link svg {
+  position: absolute;
+  content: "";
+}
+
+.site-header__user-link--mail svg {
+  top: 3px;
+  left: 11px;
+}
+
+.site-header__user-link--phone svg {
+  top: 0;
+  left: 18px;
+}
+
+.site-header__btn-callback {
+  display: block;
+  width: 180px;
 }

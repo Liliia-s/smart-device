@@ -1,14 +1,11 @@
-// ----INDEX-----------------------------------
-
 body {
-  @media (max-width: 320px) {
-    background: url("../img/mob.jpg") no-repeat;
-    min-height: 4869px;
-    // min-height: 4472px;
+  @media (min-width: $desktop-max-width) and (max-width: 1920px) {
+    background: url("../img/desk.jpg") no-repeat;
+    min-height: 4066px;
     opacity: 0.2;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: 769px) {
     background: url("../img/tab.jpg") no-repeat;
     // background: url("../img/pixel-perfect-tablet-yellow.jpg") no-repeat;
     // min-height: 3440px;
@@ -16,9 +13,10 @@ body {
     opacity: 0.2;
   }
 
-  @media (min-width: $desktop-max-width) and (max-width: 1921px) {
-    background: url("../img/desk.jpg") no-repeat;
-    min-height: 4066px;
+  @media (max-width: 320px) {
+    background: url("../img/mob.jpg") no-repeat;
+    min-height: 4869px;
+    // min-height: 4472px;
     opacity: 0.2;
   }
 }

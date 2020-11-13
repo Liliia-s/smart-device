@@ -1,0 +1,84 @@
+.promo {
+  display: flex;
+  padding-top: 175px;
+  padding-right: 177px;
+  padding-bottom: 103px;
+}
+
+.promo__desc-wrapper {
+  margin-right: auto;
+  padding-top: 56px;
+}
+
+.promo__wrapper {
+  max-width: 720px;
+  padding-bottom: 44px;
+}
+
+.promo__wrapper h1 {
+  @include reset-margin;
+  padding-bottom: 28px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 80px;
+  line-height: 93.75px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.promo__wrapper p {
+  @include reset-margin;
+  position: relative;
+  font-size: 22px;
+  line-height: 34.5px;
+  color: $color-white;
+  padding-left: 93px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 0;
+    width: 66px;
+    height: 2px;
+    background: url("../img/dash.svg") no-repeat;
+  }
+}
+
+.promo__btn-consultation {
+  display: block;
+  width: 407px;
+  margin-left: 94px;
+  // margin-bottom: 130px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 18.75px;
+  background-color: $color-blue-light;
+  border: 1px solid $color-blue-light;
+
+  &:hover,
+  &:focus {
+    color: $color-blue-light;
+    background-color: transparent;
+    border-color: $color-blue-light;
+  }
+}
+
+.promo__scroll-down {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 14px;
+  line-height: 15.68px;
+  color: rgba($color-white, 0.5);
+  transform: rotate(-90deg) translate(-127px, -37px);
+
+  &:hover,
+  &:focus {
+    color: $color-blue-light;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
