@@ -281,8 +281,6 @@ html {
       padding: 0 15px; } }
 
 .site-header {
-  position: relative;
-  z-index: -2;
   padding-top: 33px;
   background: url("../img/back-promo-desk.png") #1b2d37 no-repeat; }
   @media (max-width: 1023px) {
