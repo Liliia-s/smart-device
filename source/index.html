@@ -34,19 +34,18 @@
         <div class="site-header__user-nav">
           <ul class="site-header__user-list">
             <li class="site-header__user-item">
-              <a class="site-header__user-link site-header__user-link--mail" href="mailto:info@sd.ru">
+              <a class="site-header__user-link site-header__user-link--mail" href="mailto:info@sd.ru" aria-label="Написать на наш почтовый ящик info@sd.ru">
                 <svg viewBox="0 0 19 14" fill="#00b2ff">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-                info@sd.ru
+                </svg><span>info@sd.ru</span>
               </a>
             </li>
             <li class="site-header__user-item">
-              <a class="site-header__user-link site-header__user-link--phone" href="tel:74950005252">
+              <a class="site-header__user-link site-header__user-link--phone" href="tel:74950005252" aria-label="Позвонить нам по телефону 74950005252">
                 <svg viewBox="0 0 18 18" fill="#00b2ff">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-                +7 (495) 000 52 52</a>
+                </svg><span>+7 (495) 000 52 52</span>
+              </a>
             </li>
           </ul>
           <a href="#" class="site-header__btn-callback btn">Заказать звонок</a>
@@ -60,24 +59,30 @@
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
         </div>
         <!-- убрать классы -->
-        <a href="#form" class="promo__btn-consultation btn">Получить бесплатную консультацию</a>
+        <a href="#form" class="promo__btn-consultation btn">
+          <!-- убрать классы -->
+          <span class="promo__btn-text1">Получить бесплатную консультацию</span>
+          <span class="promo__btn-text2">Бесплатная консультация</span>
+        </a>
         <a href="#advantages" class="promo__scroll-down">Скролл вниз</a>
       </div>
-      <picture>
-        <!-- 1х: 705px; 2x: 1410px -->
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/board-desk.webp 1x, img/board-desk@2x.webp 2x">
-        <!-- 1х: 465px; 2x: 930px -->
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/board-tab.webp 1x, img/board-tab@2x.webp 2x">
-        <!-- 1х: 301px; 2x: 930px -->
-        <source type="image/webp" srcset="img/board-mob.webp 1x, img/board-mob@2x.webp 2x">
+      <div class="promo__picture">
+        <picture>
+          <!-- 1х: 705px; 2x: 1410px -->
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/board-desk.webp 1x, img/board-desk@2x.webp 2x">
+          <!-- 1х: 465px; 2x: 930px -->
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/board-tab.webp 1x, img/board-tab@2x.webp 2x">
+          <!-- 1х: 301px; 2x: 930px -->
+          <source type="image/webp" srcset="img/board-mob.webp 1x, img/board-mob@2x.webp 2x">
 
-        <!-- 1х: 705px; 2x: 1410px -->
-        <source media="(min-width: 1024px)" srcset="img/board-desk.png 1x, img/board-desk@2x.png 2x">
-        <!-- 1х: 465px; 2x: 930px -->
-        <source media="(min-width: 768px)" srcset="img/board-tab.png 1x, img/board-tab@2x.png 2x">
-        <!-- 1х: 319px; 2x: 930px -->
-        <img src="img/board-mob.png" srcset="img/img/board-mob@2x.png 2x" alt="Печатная плата">
-      </picture>
+          <!-- 1х: 705px; 2x: 1410px -->
+          <source media="(min-width: 1024px)" srcset="img/board-desk.png 1x, img/board-desk@2x.png 2x">
+          <!-- 1х: 465px; 2x: 930px -->
+          <source media="(min-width: 768px)" srcset="img/board-tab.png 1x, img/board-tab@2x.png 2x">
+          <!-- 1х: 319px; 2x: 930px -->
+          <img src="img/board-mob.png" srcset="img/img/board-mob@2x.png 2x" alt="Печатная плата">
+        </picture>
+      </div>
     </section>
   </header>
   <main>

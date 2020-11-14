@@ -1,4 +1,6 @@
 .site-header {
+  position: relative;
+  z-index: -2;
   padding-top: 33px;
   background: url("../img/back-promo-desk.png") #1b2d37 no-repeat;
 
@@ -22,6 +24,10 @@
   align-items: center;
   margin-right: auto;
   padding-right: 156px;
+
+  @media (max-width: $desktop-max-width-2) {
+    padding-right: 100px;
+  }
 
   @media (max-width: $tablet-max-width) {
     padding-right: 400px;
@@ -104,6 +110,10 @@
   flex-wrap: wrap;
   margin-right: 53px;
 
+  @media (max-width: $desktop-max-width-2) {
+    margin-right: 21px;
+  }
+
   @media (max-width: $tablet-max-width) {
     margin: 0;
   }
@@ -112,6 +122,10 @@
 .site-header__user-item {
   &:not(:last-child) {
     margin-right: 71px;
+
+    @media (max-width: $desktop-max-width-2) {
+      margin-right: 20px;
+    }
 
     @media (max-width: $tablet-max-width) {
       margin-right: 0;
@@ -145,11 +159,16 @@
 
   @media (max-width: $tablet-max-width) {
     padding-left: 46px;
-    font-size: 0;
   }
 
   @media (max-width: $mobile-max-width) {
     padding-left: 42px;
+  }
+}
+
+.site-header__user-link span {
+  @media (max-width: $tablet-max-width) {
+    display: none;
   }
 }
 
@@ -165,7 +184,7 @@
   height: 14px;
 
   @media (max-width: $tablet-max-width) {
-    top: -14px;
+    top: -1px;
     left: 11px;
     width: 25px;
     height: 19px;
@@ -180,7 +199,7 @@
   height: 18px;
 
   @media (max-width: $tablet-max-width) {
-    top: -17px;
+    top: -4px;
     left: 24px;
     width: 24px;
     height: 24px;
