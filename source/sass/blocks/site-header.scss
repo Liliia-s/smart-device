@@ -1,6 +1,14 @@
 .site-header {
   padding-top: 33px;
   background: url("../img/back-promo-desk.png") #1b2d37 no-repeat;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 16px;
+  }
 }
 
 .site-header__wrapper {
@@ -14,6 +22,14 @@
   align-items: center;
   margin-right: auto;
   padding-right: 156px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-right: 400px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-right: 138px;
+  }
 }
 
 .site-header__logo-wrapper::before,
@@ -25,6 +41,14 @@
   width: 37px;
   height: 1px;
   background: url("../img/dash.svg") no-repeat;
+
+  @media (max-width: $tablet-max-width) {
+    top: 17px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    top: 11px;
+  }
 }
 
 .site-header__logo-wrapper::after {
@@ -33,6 +57,20 @@
 
 .site-header__logo-wrapper a {
   padding-right: 15px;
+  cursor: default;
+}
+
+.site-header__logo-link img {
+  @media (max-width: $mobile-max-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.site-header__tagline-wrapper {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
 }
 
 .site-header__title {
@@ -65,11 +103,19 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 53px;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0;
+  }
 }
 
 .site-header__user-item {
   &:not(:last-child) {
     margin-right: 71px;
+
+    @media (max-width: $tablet-max-width) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -96,6 +142,15 @@
   &:active svg {
     fill-opacity: 0.5;
   }
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 46px;
+    font-size: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 42px;
+  }
 }
 
 .site-header__user-link svg {
@@ -106,14 +161,41 @@
 .site-header__user-link--mail svg {
   top: 3px;
   left: 11px;
+  width: 19px;
+  height: 14px;
+
+  @media (max-width: $tablet-max-width) {
+    top: -14px;
+    left: 11px;
+    width: 25px;
+    height: 19px;
+    // zoom: 1.4;
+  }
 }
 
 .site-header__user-link--phone svg {
   top: 0;
   left: 18px;
+  width: 18px;
+  height: 18px;
+
+  @media (max-width: $tablet-max-width) {
+    top: -17px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    left: 17px;
+  }
 }
 
 .site-header__btn-callback {
   display: block;
   width: 180px;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }

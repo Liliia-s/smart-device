@@ -1,11 +1,34 @@
 .promo {
+  position: relative;
   display: flex;
   padding-top: 175px;
   padding-right: 177px;
   padding-bottom: 103px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 59px;
+    padding-bottom: 163px;
+    padding-left: 88px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 59px;
+  }
+}
+
+.promo picture {
+  @media (max-width: $tablet-max-width) {
+    position: absolute;
+    content: "";
+    top: 41px;
+    right: -207px;
+    width: 465px;
+    // height: auto;
+  }
 }
 
 .promo__desc-wrapper {
+  // position: relative;
   margin-right: auto;
   padding-top: 56px;
 }
@@ -13,6 +36,11 @@
 .promo__wrapper {
   max-width: 720px;
   padding-bottom: 44px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 390px;
+    padding-bottom: 55px;
+  }
 }
 
 .promo__wrapper h1 {
@@ -25,6 +53,17 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $color-white;
+
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 30px;
+    font-size: 60px;
+    line-height: 70.31px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 40px;
+    line-height: 46.88px;
+  }
 }
 
 .promo__wrapper p {
@@ -43,6 +82,21 @@
     width: 66px;
     height: 2px;
     background: url("../img/dash.svg") no-repeat;
+
+    @media (max-width: $tablet-max-width) {
+      width: 33px;
+    }
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 51px;
+    font-size: 18px;
+    line-height: 28.22px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 16px;
+    line-height: 25.09px;
   }
 }
 
@@ -51,7 +105,7 @@
   width: 407px;
   margin-left: 94px;
   // margin-bottom: 130px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   font-size: 16px;
   line-height: 18.75px;
   background-color: $color-blue-light;
@@ -63,9 +117,23 @@
     background-color: transparent;
     border-color: $color-blue-light;
   }
+
+  @media (max-width: $tablet-max-width) {
+    width: 379px;
+    margin-left: 51px;
+    padding-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 287px;
+  }
 }
 
 .promo__scroll-down {
+  // position: absolute;
+  // content: "";
+  // bottom: 0;
+  // left: 0;
   display: inline-block;
   vertical-align: bottom;
   font-size: 14px;
@@ -80,5 +148,9 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
   }
 }
