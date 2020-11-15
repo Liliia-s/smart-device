@@ -1,0 +1,27 @@
+.site-footer {
+  padding-top: 66px;
+}
+
+.site-footer__user-wrapper {
+  display: flex;
+}
+
+.site-footer__wrapper {
+  width: 30%;
+}
+
+
+.site-footer__wrapper > p {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.site-footer__logo-wrapper {
+  padding-bottom: 55px;
+}
+
+.site-footer__nav-wrapper {
+  display: flex;
+  width: 70%;
+}
