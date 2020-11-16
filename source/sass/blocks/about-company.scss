@@ -163,4 +163,9 @@
   padding-top: 15px;
   color: $color-blue-light;
   border-color: $color-blue-light;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+  }
 }

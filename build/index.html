@@ -86,7 +86,7 @@
     </section>
   </header>
   <main>
-    <section class="about-company container">
+    <section class="about-company container" id="advantages">
       <h2 class="visually-hidden">Преимущества компании</h2>
       <ul class="about-company__advantages-list">
         <li class="about-company__advantages-item">
@@ -176,6 +176,30 @@
           </article>
         </li>
       </ul>
+    </section>
+    <section class="form-blank container" id="form">
+      <form class="form-blank__wrapper form" action="https://echo.htmlacademy.ru" method="POST">
+        <h3 class="form__title subtitle">Остались вопросы? Задайте их нам!</h3>
+        <p class="form__text">Мы проконсультируем Вас бесплатно</p>
+        <!-- убрать классы -->
+        <div class="form__input-wrapper">
+          <label class="visually-hidden" for="field-name">Введите Ваше имя</label>
+          <input type="text" name="name" id="field-name" class="form__input" placeholder="Имя" required>
+          <label class="visually-hidden" for="field-tel">Введите Ваш номер телефона</label>
+          <input type="tel" name="tel" id="field-tel" minlength="22" class="form__input" placeholder="Телефон" required>
+        </div>
+        <div class="form__textarea-wrapper">
+          <textarea type="text" name="question" class="form__textarea" placeholder="Ваш вопрос" required></textarea>
+        </div>
+        <div class="form__wrapper">
+          <button type="submit" class="form__btn btn">Задать вопрос</button>
+          <div class="form-order__content form-order__content--color">
+            <div class="form__agreement">
+              <input class="form__input-agreement visually-hidden" type="checkbox" name="agreement" id="check-agreement" checked="checked">
+              <label class="form__agreement-name" for="check-agreement">Я согласен на обработку персональных данных</label>
+            </div>
+          </div>
+      </form>
     </section>
   </main>
   <footer class="site-footer">

@@ -1,0 +1,105 @@
+.form {
+  max-width: 570px;
+}
+
+.form h3 {
+  padding-bottom: 10px;
+  color: $color-white;
+}
+
+.form > p {
+  @include reset-margin;
+  padding-bottom: 49px;
+  color: $color-white;
+}
+
+.form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.form__input-wrapper input,
+.form__textarea-wrapper textarea {
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-bottom: 20px;
+  padding-left: 17px;
+  color: $color-white;
+  background-color: rgba($color-white, 0.1);
+  border: 0;
+
+  &::placeholder {
+    color: $color-white;
+  }
+}
+
+.form__input-wrapper input {
+  width: 270px;
+}
+
+.form__textarea-wrapper {
+  padding-bottom: 36px;
+}
+
+.form__textarea-wrapper textarea {
+  width: 570px;
+  min-height: 154px;
+}
+
+.form__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form__wrapper button {
+  width: 270px;
+  margin-right: auto;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $color-blue-light;
+    background-color: $color-white;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.form__agreement {
+  max-width: 265px;
+}
+
+.form__agreement input:checked + .form__agreement-name {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 7px;
+    width: 9px;
+    height: 6px;
+    background: url("../img/tick.svg") no-repeat;
+  }
+}
+
+.form__agreement label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  font-size: 14px;
+  line-height: 15.68px;
+  color: rgba($color-white, 0.8);
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 3px;
+    border: 1px solid $color-white;
+  }
+}

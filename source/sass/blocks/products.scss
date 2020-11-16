@@ -5,6 +5,10 @@
   @media (max-width: $tablet-max-width) {
     padding-top: 48px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 44px;
+  }
 }
 
 .products h3 {
@@ -12,26 +16,44 @@
   padding-left: 120px;
   color: $color-white;
 
+  @media (max-width: $desktop-max-width-2) {
+    padding-left: 0;
+    text-align: center;
+  }
+
   @media (max-width: $tablet-max-width) {
     padding-left: 0;
+    text-align: left;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 29px;
   }
 }
 
 .products ul {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 128px;
+  padding-bottom: 98px;
 
   @media (max-width: $tablet-max-width) {
     flex-direction: column;
+    padding-bottom: 34px;
   }
 }
 
 .products__list li {
   margin-right: 30px;
+  margin-bottom: 30px;
 
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 30px;
   }
 }

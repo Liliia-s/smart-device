@@ -1,7 +1,12 @@
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 370px;
+
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+  }
 }
 
 .product-card a {
@@ -11,11 +16,50 @@
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 44px;
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 256px;
+    padding-top: 46px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 26px;
+    padding-left: 33px;
+  }
+
+  &:hover p,
+  &:focus p {
+    color: $color-blue-light;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color-white, 0.3);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 63px;
+    bottom: 0;
+    right: 0;
+    background: url("../img/arrow-right.svg") 50% 50% $color-blue-light no-repeat;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: #3390ff;
+  }
 }
 
 .product-card__link p {
   @include reset-margin;
-  padding-right: 134px;
+  max-width: 170px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -25,13 +69,46 @@
 .product-card__link {
   &--production {
     background: url("../img/make-board-desk.png") no-repeat;
+    background-size: cover;
+
+    @media (max-width: $tablet-max-width) {
+      background: url("../img/make-board-tab.png") no-repeat;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      background: url("../img/make-board-mob.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   &--mounting {
     background: url("../img/mount-board-desk.png") no-repeat;
+    background-size: cover;
+
+    @media (max-width: $tablet-max-width) {
+      background: url("../img/mount-board-tab.png") no-repeat;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      background: url("../img/mount-board-mob.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   &--accessories {
     background: url("../img/access-light-desk.png") no-repeat;
+    background-size: cover;
+
+    @media (max-width: $tablet-max-width) {
+      background: url("../img/access-light-tab.png") no-repeat;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      background: url("../img/make-board-mob.png") no-repeat;
+      background-size: cover;
+    }
   }
 }

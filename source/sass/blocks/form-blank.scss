@@ -1,0 +1,33 @@
+.form-blank {
+  position: relative;
+  padding-top: 94px;
+  padding-right: 376px;
+  padding-bottom: 113px;
+  background-color: $color-blue-light;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 161px;
+    left: 350px;
+    width: 511px;
+    height: 288px;
+    background: url("../img/plan.png") no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 161px;
+    left: 350px;
+    width: 560px;
+    height: 486px;
+    background: url("../../img/polygon.svg") no-repeat;
+  }
+}
+
+.form-blank__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
