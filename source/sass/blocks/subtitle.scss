@@ -1,0 +1,17 @@
+.subtitle {
+  @include reset-margin;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 36px;
+  line-height: 50.63px;
+  font-weight: normal;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 28px;
+    line-height: 39.38 px;
+  }
+}

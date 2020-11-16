@@ -248,13 +248,13 @@ html {
 
 @media (min-width: 768px) and (max-width: 769px) {
   body {
-    background: url("../img/tab1.jpg") no-repeat;
+    background: url("../img/tab.jpg") no-repeat;
     min-height: 4047px;
     opacity: 0.2; } }
 
 @media (max-width: 320px) {
   body {
-    background: url("../img/mob.jpg") no-repeat;
+    background: url("../img/mob1.jpg") no-repeat;
     min-height: 4869px;
     opacity: 0.2; } }
 
@@ -933,7 +933,10 @@ html {
   padding-top: 112px; }
   @media (max-width: 1023px) {
     .about-company {
-      padding-top: 35px; } }
+      padding-top: 54px; } }
+  @media (max-width: 767px) {
+    .about-company {
+      padding-top: 37px; } }
 
 .about-company__advantages-list {
   margin: 0;
@@ -975,7 +978,7 @@ html {
     @media (max-width: 767px) {
       .about-company__advantages-list li:not(:nth-child(2n)) {
         margin-right: 0; } }
-  @media (min-width: 1145px) {
+  @media (min-width: 1145px) and (max-width: 1919px) {
     .about-company__advantages-list li:nth-child(2n) {
       margin-right: 30px; } }
 
@@ -1021,20 +1024,13 @@ html {
   margin: 0; }
 
 .about-company__name {
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
-  font-size: 36px;
-  line-height: 50.63px;
   padding-bottom: 21px; }
   @media (max-width: 1023px) {
     .about-company__name {
-      padding-bottom: 27px;
-      font-size: 32px;
-      line-height: 45px; } }
+      padding-bottom: 27px; } }
   @media (max-width: 767px) {
     .about-company__name {
-      padding-bottom: 19px;
-      font-size: 28px;
-      line-height: 39.38 px; } }
+      padding-bottom: 19px; } }
 
 .about-company__desc-wrapper {
   max-width: 980px;
@@ -1052,7 +1048,10 @@ html {
     padding-bottom: 23px; }
     @media (max-width: 1023px) {
       .about-company__desc-wrapper p:not(:last-child) {
-        padding-bottom: 45px; } }
+        padding-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .about-company__desc-wrapper p:not(:last-child) {
+        padding-bottom: 44px; } }
 
 @media (max-width: 1023px) {
   .about-company__desc-fragment {
@@ -1122,3 +1121,92 @@ html {
     .advantages-card__name {
       font-size: 20px;
       line-height: 28.13px; } }
+
+.subtitle {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 36px;
+  line-height: 50.63px;
+  font-weight: normal; }
+  @media (max-width: 1023px) {
+    .subtitle {
+      font-size: 32px;
+      line-height: 45px; } }
+  @media (max-width: 767px) {
+    .subtitle {
+      font-size: 28px;
+      line-height: 39.38 px; } }
+
+.products {
+  padding-top: 88px;
+  background-color: #1b2d37; }
+  @media (max-width: 1023px) {
+    .products {
+      padding-top: 48px; } }
+
+.products h3 {
+  padding-bottom: 51px;
+  padding-left: 120px;
+  color: #ffffff; }
+  @media (max-width: 1023px) {
+    .products h3 {
+      padding-left: 0; } }
+
+.products ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 128px; }
+  @media (max-width: 1023px) {
+    .products ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.products__list li {
+  margin-right: 30px; }
+  @media (max-width: 1023px) {
+    .products__list li {
+      margin-right: 0; } }
+
+.product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 370px; }
+
+.product-card a {
+  display: block;
+  min-height: 620px;
+  padding-top: 53px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 44px; }
+
+.product-card__link p {
+  margin: 0;
+  padding-right: 134px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff; }
+
+.product-card__link--production {
+  background: url("../img/make-board-desk.png") no-repeat; }
+
+.product-card__link--mounting {
+  background: url("../img/mount-board-desk.png") no-repeat; }
+
+.product-card__link--accessories {
+  background: url("../img/access-light-desk.png") no-repeat; }

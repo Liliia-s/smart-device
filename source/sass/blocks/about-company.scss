@@ -2,7 +2,11 @@
   padding-top: 112px;
 
   @media (max-width: $tablet-max-width) {
-    padding-top: 35px;
+    padding-top: 54px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 37px;
   }
 }
 
@@ -46,7 +50,7 @@
   }
 
   &:nth-child(2n) {
-    @media (min-width: 1145px) {
+    @media (min-width: 1145px) and (max-width: $desktop-max-width-2) {
       margin-right: 30px;
     }
   }
@@ -107,21 +111,14 @@
 }
 
 .about-company__name {
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
-  font-size: 36px;
-  line-height: 50.63px;
   padding-bottom: 21px;
 
   @media (max-width: $tablet-max-width) {
     padding-bottom: 27px;
-    font-size: 32px;
-    line-height: 45px;
   }
 
   @media (max-width: $mobile-max-width) {
     padding-bottom: 19px;
-    font-size: 28px;
-    line-height: 39.38 px;
   }
 }
 
@@ -145,7 +142,11 @@
     padding-bottom: 23px;
 
     @media (max-width: $tablet-max-width) {
-      padding-bottom: 45px;
+      padding-bottom: 24px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      padding-bottom: 44px;
     }
   }
 }

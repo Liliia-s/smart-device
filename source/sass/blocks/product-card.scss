@@ -1,0 +1,37 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.product-card a {
+  display: block;
+  min-height: 620px;
+  padding-top: 53px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 44px;
+}
+
+.product-card__link p {
+  @include reset-margin;
+  padding-right: 134px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white;
+}
+
+.product-card__link {
+  &--production {
+    background: url("../img/make-board-desk.png") no-repeat;
+  }
+
+  &--mounting {
+    background: url("../img/mount-board-desk.png") no-repeat;
+  }
+
+  &--accessories {
+    background: url("../img/access-light-desk.png") no-repeat;
+  }
+}
