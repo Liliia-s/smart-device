@@ -1,0 +1,79 @@
+
+.advantages-card {
+  // display: flex;
+  // flex-direction: column;
+  width: 570px;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 49px;
+  padding-left: 45px;
+  border: 1px solid $color-grey-light;
+  border-left: 2px solid $color-blue-light;
+
+  @media (max-width: $desktop-max-width-2) {
+    width: 345px;
+    min-height: 232px;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 26px;
+    padding-left: 26px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    padding-left: 23px;
+  }
+
+  &:hover {
+    background-color: $color-blue-light;
+  }
+
+  &:hover .advantages-card__name {
+    color: $color-white;
+  }
+
+  &:hover .advantages-card__desc {
+    color: $color-white;
+  }
+
+  &:hover svg {
+    fill: $color-white;
+  }
+}
+
+.advantages-card svg {
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 9px;
+  }
+}
+
+.advantages-card p {
+  @include reset-margin;
+}
+
+.advantages-card__name {
+  // padding-top: 50px;
+  padding-bottom: 23px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 33.75px;
+  color: $color-blue-light;
+
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 12px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 20px;
+    line-height: 28.13px;
+  }
+}
