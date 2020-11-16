@@ -9,16 +9,20 @@
   cursor: default;
 }
 
-.logo-link img {
-  @media (max-width: $mobile-max-width) {
-    width: 38px;
-    height: 38px;
+.logo-link {
+  &--resize img {
+    @media (max-width: $mobile-max-width) {
+      width: 38px;
+      height: 38px;
+    }
   }
 }
 
 .logo__tagline-wrapper {
-  @media (max-width: $mobile-max-width) {
-    display: none;
+  &--hide {
+    @media (max-width: $mobile-max-width) {
+      display: none;
+    }
   }
 }
 

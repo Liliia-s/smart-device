@@ -22,10 +22,10 @@
     <div class="container">
       <div class="site-header__wrapper">
         <div class="site-header__logo-wrapper logo">
-          <a class="logo-link">
+          <a class="logo-link logo-link--resize">
             <img src="img/logo.svg" alt="Лого компании Smart Device" width="52" height="52">
           </a>
-          <div class="logo__tagline-wrapper">
+          <div class="logo__tagline-wrapper logo__tagline-wrapper--hide">
             <!-- убрать классы -->
             <p class="logo__title">Smart Device</p>
             <p class="logo__tagline">умные технологии</p>
@@ -88,90 +88,96 @@
   <main>
 
   </main>
-  <footer class="site-footer container">
+  <footer class="site-footer">
     <div class="site-footer__user-wrapper">
-      <div class="site-footer__wrapper">
-        <div class="site-footer__logo-wrapper logo">
-          <a class="logo-link">
-            <img src="img/logo.svg" alt="Лого компании Smart Device" width="52" height="52">
-          </a>
-          <div class="logo__tagline-wrapper">
-            <!-- убрать классы -->
-            <p class="logo__title logo__title--black">Service Device</p>
-            <p class="logo__tagline">умные технологии</p>
+      <div class="site-footer__container container">
+        <div class="site-footer__wrapper container">
+          <div class="site-footer__logo-wrapper logo">
+            <a class="logo-link">
+              <img src="img/logo.svg" alt="Лого компании Smart Device" width="52" height="52">
+            </a>
+            <div class="logo__tagline-wrapper">
+              <!-- убрать классы -->
+              <p class="logo__title logo__title--black">Service Device</p>
+              <p class="logo__tagline">умные технологии</p>
+            </div>
+          </div>
+          <p class="site-footer__years-company years-company">1999-2018 SD Service Devices</p>
+          <div class="site-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" aria-label="Перейти на нашу страничку в Facebook">
+                  <svg width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" aria-label="Перейти на нашу страничку в Одноклассниках">
+                  <svg width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" aria-label="Перейти на нашу страничку в Вконтакте">
+                  <svg width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <p class="years-company">1999-2018 SD Service Devices</p>
-        <div class="site-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" aria-label="Перейти на нашу страничку в Facebook">
-                <svg width="27" height="27">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Перейти на нашу страничку в Одноклассниках">
-                <svg width="27" height="27">
-                  <use xlink:href="img/sprite.svg#icon-ok"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Перейти на нашу страничку в Вконтакте">
-                <svg width="27" height="27">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="site-footer__nav-wrapper">
-        <div class="site-footer__menu-wrapper">
-          <p class="site-footer__menu-title">Разделы сайта</p>
-          <ul class="site-footer__menu-list">
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">О компании</a></li>
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">Продукты</a></li>
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">Производство печатных плат
-              </a></li>
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">Монтаж печатных плат</a></li>
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">Комплектующие</a></li>
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">Доставка</a></li>
-            <li class="site-footer__item">
-              <a href="#" class="site-footer__menu-link">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="site-footer__contacts-wrapper">
-          <p class="site-footer__contacts-title">Наш офис</p>
-          <ul class="site-footer__contacts-list">
-            <li class="site-footer__contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
-            <li class="site-footer__contacts-item">+7 (495) 589-40-50
-            </li>
-            <li class="site-footer__contacts-item">+7 (925) 003-87-67
-            </li>
-            <li class="site-footer__contacts-item">+7 (926) 926-080-79</li>
-          </ul>
+        <div class="site-footer__nav-wrapper container">
+          <div class="site-footer__nav-item site-footer__nav-item--menu">
+            <p class="site-footer__menu-title">Разделы сайта</p>
+            <ul class="site-footer__list site-footer__list--menu">
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">О компании</a></li>
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">Продукты</a></li>
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">Производство печатных плат
+                </a></li>
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">Монтаж печатных плат</a></li>
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">Комплектующие</a></li>
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">Доставка</a></li>
+              <li class="site-footer__item site-footer__item--menu">
+                <a href="#" class="site-footer__menu-link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__nav-item site-footer__nav-item--contacts">
+            <p class="site-footer__contacts-title">Наш офис</p>
+            <ul class="site-footer__list site-footer__list--contacts">
+              <li class="site-footer__item site-footer__item--contacts">г. Мытищи, Олимпийский проспект, д.10</li>
+              <li class="site-footer__item site-footer__item--contacts">+7 (495) 589-40-50
+              </li>
+              <li class="site-footer__item site-footer__item--contacts">+7 (925) 003-87-67
+              </li>
+              <li class="site-footer__item site-footer__item--contacts">+7 (926) 926-080-79</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="site-footer__info-wrapper">
-      <ul class="site-footer__info-list">
+    <!-- удалить классы -->
+    <div class="site-footer__info-wrapper container">
+      <ul class="site-footer__info-list site-footer__info-list--one">
         <li class="site-footer__info-item">Все права защищены</li>
         <li class="site-footer__info-item years-company">1999-2018 SD Service Devices</li>
+      </ul>
+      <ul class="site-footer__info-list site-footer__info-list--two">
         <li class="site-footer__info-item">
-          <a class="site-footer__info-link">Условия конфиденциальности</a></li>
+          <a href="#" class="site-footer__info-link">Условия конфиденциальности</a></li>
         <li class="site-footer__info-item">Developed by wow studio</li>
       </ul>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

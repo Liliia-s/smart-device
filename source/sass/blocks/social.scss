@@ -4,9 +4,13 @@
   flex-wrap: wrap;
 }
 
-.social__item a {
-  padding-right: 15px;
+.social__list li {
+  &:not(:last-child) {
+    padding-right: 15px;
+  }
+}
 
+.social__item a {
   &:hover svg,
   &:hover svg {
     opacity: 0.7;
