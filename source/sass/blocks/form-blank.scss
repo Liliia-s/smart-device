@@ -21,16 +21,28 @@
   &::after {
     position: absolute;
     content: "";
-    top: 194px;
-    right: -87px;
-    width: 432px;
-    height: 408px;
     background: url("../img/triangle.svg") no-repeat;
-    background-size: contain;
 
     @media (max-width: $desktop-max-width-2) {
       display: none;
     }
+  }
+
+  &::before {
+    top: 194px;
+    right: -87px;
+    width: 432px;
+    height: 408px;
+    background-size: contain;
+  }
+
+  &::after {
+    top: 0;
+    right: 17px;
+    width: 262px;
+    height: 256px;
+    background-size: contain;
+    transform: scale(-1, 1);
   }
 }
 

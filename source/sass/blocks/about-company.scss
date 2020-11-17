@@ -1,5 +1,12 @@
 .about-company {
+  position: relative;
   padding-top: 112px;
+  background: url("../img/polygon-big.svg") no-repeat 53% 38%,
+    url("../img/triangle2.svg") no-repeat 98% 42%;
+
+  @media (max-width: $desktop-max-width-2) {
+    background: url("../img/polygon-big.svg") no-repeat -203% 37%;
+  }
 
   @media (max-width: $tablet-max-width) {
     padding-top: 54px;
@@ -7,6 +14,37 @@
 
   @media (max-width: $mobile-max-width) {
     padding-top: 37px;
+    background-position: 22% 71%;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+
+    @media (max-width: $desktop-max-width-2) {
+      display: none;
+    }
+  }
+
+  &::before {
+    top: -20px;
+    left: 201px;
+    width: 336px;
+    height: 324px;
+    background: url("../img/triangle2.svg") no-repeat;
+    z-index: -10;
+    transform: scale(-1, 1);
+  }
+
+  &::after {
+    bottom: -55px;
+    left: -297px;
+    width: 872px;
+    height: 873px;
+    background: url("../img/polygon-big.svg") no-repeat;
+    z-index: -10;
+    transform: scale(-1, 1);
   }
 }
 
@@ -18,13 +56,11 @@
   padding-bottom: 75px;
 
   @media (max-width: $tablet-max-width) {
-    // justify-content: flex-start;
     padding-bottom: 24px;
   }
 
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
-    // align-items: center;
     padding-bottom: 33px;
   }
 }

@@ -240,24 +240,6 @@ html {
   font-display: swap;
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff"); }
 
-@media (min-width: 1920px) and (max-width: 1920px) {
-  body {
-    background: url("../img/desk.jpg") no-repeat;
-    min-height: 4066px;
-    opacity: 0.2; } }
-
-@media (min-width: 768px) and (max-width: 769px) {
-  body {
-    background: url("../img/tab.jpg") no-repeat;
-    min-height: 4047px;
-    opacity: 0.2; } }
-
-@media (max-width: 320px) {
-  body {
-    background: url("../img/mob1.jpg") no-repeat;
-    min-height: 4869px;
-    opacity: 0.2; } }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -281,8 +263,10 @@ html {
       padding: 0 15px; } }
 
 .site-header {
+  position: relative;
   padding-top: 33px;
-  background: url("../img/promo-back.png") #1b2d37 repeat-x; }
+  background: url("../img/promo-back.png") #1b2d37 repeat-x;
+  z-index: -100; }
   @media (max-width: 1023px) {
     .site-header {
       padding-top: 20px; } }
@@ -299,6 +283,7 @@ html {
     right: 220px;
     width: 670px;
     height: 638px;
+    z-index: -10;
     background: url("../img/polygon.svg") no-repeat; }
     @media (max-width: 1023px) {
       .site-header__promo::before {
@@ -955,13 +940,43 @@ html {
   opacity: 0.3; }
 
 .about-company {
-  padding-top: 112px; }
+  position: relative;
+  padding-top: 112px;
+  background: url("../img/polygon-big.svg") no-repeat 53% 38%, url("../img/triangle2.svg") no-repeat 98% 42%; }
+  @media (max-width: 1919px) {
+    .about-company {
+      background: url("../img/polygon-big.svg") no-repeat -203% 37%; } }
   @media (max-width: 1023px) {
     .about-company {
       padding-top: 54px; } }
   @media (max-width: 767px) {
     .about-company {
-      padding-top: 37px; } }
+      padding-top: 37px;
+      background-position: 22% 71%; } }
+  .about-company::before, .about-company::after {
+    position: absolute;
+    content: ""; }
+    @media (max-width: 1919px) {
+      .about-company::before, .about-company::after {
+        display: none; } }
+  .about-company::before {
+    top: -20px;
+    left: 201px;
+    width: 336px;
+    height: 324px;
+    background: url("../img/triangle2.svg") no-repeat;
+    z-index: -10;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
+  .about-company::after {
+    bottom: -55px;
+    left: -297px;
+    width: 872px;
+    height: 873px;
+    background: url("../img/polygon-big.svg") no-repeat;
+    z-index: -10;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
 
 .about-company__advantages-list {
   margin: 0;
@@ -1098,6 +1113,7 @@ html {
   padding-right: 40px;
   padding-bottom: 49px;
   padding-left: 45px;
+  background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 2px solid #00b2ff; }
   @media (max-width: 1919px) {
@@ -1331,15 +1347,24 @@ html {
   .form-blank__container::before, .form-blank__container::after {
     position: absolute;
     content: "";
+    background: url("../img/triangle.svg") no-repeat; }
+    @media (max-width: 1919px) {
+      .form-blank__container::before, .form-blank__container::after {
+        display: none; } }
+  .form-blank__container::before {
     top: 194px;
     right: -87px;
     width: 432px;
     height: 408px;
-    background: url("../img/triangle.svg") no-repeat;
     background-size: contain; }
-    @media (max-width: 1919px) {
-      .form-blank__container::before, .form-blank__container::after {
-        display: none; } }
+  .form-blank__container::after {
+    top: 0;
+    right: 17px;
+    width: 262px;
+    height: 256px;
+    background-size: contain;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
 
 .form-blank__wrapper {
   position: relative;

@@ -1,6 +1,8 @@
 .site-header {
+  position: relative;
   padding-top: 33px;
   background: url("../img/promo-back.png") $color-black3 repeat-x;
+  z-index: -100;
 
   @media (max-width: $tablet-max-width) {
     padding-top: 20px;
@@ -21,6 +23,7 @@
     right: 220px;
     width: 670px;
     height: 638px;
+    z-index: -10;
     background: url("../img/polygon.svg") no-repeat;
 
     @media (max-width: $tablet-max-width) {
