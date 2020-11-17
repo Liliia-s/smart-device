@@ -1,43 +1,38 @@
 .form-blank {
-  // position: relative;
   padding-top: 94px;
-  // padding-right: 127px;
   padding-bottom: 113px;
   background-color: $color-blue-light;
 
   @media (max-width: $desktop-max-width-2) {
     padding-top: 80px;
-    // padding-right: 25px;
     padding-bottom: 106px;
   }
 
   @media (max-width: $mobile-max-width) {
     padding-top: 24px;
-    // padding-right: 15px;
     padding-bottom: 43px;
   }
 }
-// &::before,
-// &::after {
-//   position: absolute;
-//   content: "";
-//   background: url("../../img/polygon.svg") no-repeat;
-// }
 
-// &::before {
-//   top: 94px;
-//   left: 245px;
-//   width: 560px;
-//   height: 486px;
-// }
+.form-blank__container {
+  position: relative;
 
-// &::after {
-//   top: 293px;
-//   left: 196px;
-//   width: 373px;
-//   height: 373px;
-//   background-size: cover;
-// }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 194px;
+    right: -87px;
+    width: 432px;
+    height: 408px;
+    background: url("../img/triangle.svg") no-repeat;
+    background-size: contain;
+
+    @media (max-width: $desktop-max-width-2) {
+      display: none;
+    }
+  }
+}
 
 .form-blank__wrapper {
   position: relative;
@@ -48,24 +43,36 @@
 
   @media (max-width: $desktop-max-width-2) {
     margin: 0 auto;
-    // margin-right: 25px;
+    margin-right: 25px;
   }
 
   @media (max-width: $mobile-max-width) {
     margin-right: 15px;
   }
 
-  &::before {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
+
+    @media (max-width: $desktop-max-width-2) {
+      display: none;
+    }
+  }
+
+  &::before {
     top: 70px;
     right: 677px;
     width: 511px;
     height: 288px;
     background: url("../img/plan.png") no-repeat;
+  }
 
-    @media (max-width: $desktop-max-width-2) {
-      display: none;
-    }
+  &::after {
+    bottom: -25px;
+    right: 695px;
+    width: 670px;
+    height: 638px;
+    background: url("../img/polygon.svg") no-repeat;
   }
 }
