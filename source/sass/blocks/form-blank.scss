@@ -1,33 +1,71 @@
 .form-blank {
-  position: relative;
+  // position: relative;
   padding-top: 94px;
-  padding-right: 376px;
+  // padding-right: 127px;
   padding-bottom: 113px;
   background-color: $color-blue-light;
+
+  @media (max-width: $desktop-max-width-2) {
+    padding-top: 80px;
+    // padding-right: 25px;
+    padding-bottom: 106px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 24px;
+    // padding-right: 15px;
+    padding-bottom: 43px;
+  }
+}
+// &::before,
+// &::after {
+//   position: absolute;
+//   content: "";
+//   background: url("../../img/polygon.svg") no-repeat;
+// }
+
+// &::before {
+//   top: 94px;
+//   left: 245px;
+//   width: 560px;
+//   height: 486px;
+// }
+
+// &::after {
+//   top: 293px;
+//   left: 196px;
+//   width: 373px;
+//   height: 373px;
+//   background-size: cover;
+// }
+
+.form-blank__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 127px;
+
+  @media (max-width: $desktop-max-width-2) {
+    margin: 0 auto;
+    // margin-right: 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-right: 15px;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    top: 161px;
-    left: 350px;
+    top: 70px;
+    right: 677px;
     width: 511px;
     height: 288px;
     background: url("../img/plan.png") no-repeat;
-  }
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 161px;
-    left: 350px;
-    width: 560px;
-    height: 486px;
-    background: url("../../img/polygon.svg") no-repeat;
+    @media (max-width: $desktop-max-width-2) {
+      display: none;
+    }
   }
-}
-
-.form-blank__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
 }

@@ -37,30 +37,42 @@
   @media (max-width: $mobile-max-width) {
     padding-right: 138px;
   }
-}
 
-.site-header__logo-wrapper::before,
-.site-header__logo-wrapper::after {
-  position: absolute;
-  content: "";
-  top: 21px;
-  right: 0;
-  width: 37px;
-  height: 1px;
-  background: url("../img/dash.svg") no-repeat;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 0;
+    width: 37px;
+    height: 1px;
+    background: url("../img/dash.svg") no-repeat;
 
-  @media (max-width: $tablet-max-width) {
-    top: 17px;
+    @media (max-width: $tablet-max-width) {
+      top: 17px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      top: 11px;
+    }
   }
 
-  @media (max-width: $mobile-max-width) {
-    top: 11px;
+  &::after {
+    top: 32px;
+
+    @media (max-width: $tablet-max-width) {
+      top: 29px;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      top: 23px;
+    }
   }
 }
 
-.site-header__logo-wrapper::after {
-  transform: translateY(12px);
-}
+// .site-header__logo-wrapper::after {
+//   transform: translateY(12px);
+// }
 
 
 .site-header__user-nav {
