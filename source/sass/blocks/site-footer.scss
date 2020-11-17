@@ -104,7 +104,6 @@
 
     @media (max-width: $tablet-max-width) {
       width: 53%;
-      // padding-right: 66px;
     }
 
     @media (max-width: $mobile-max-width) {
@@ -164,10 +163,6 @@
     column-count: 2;
     column-width: 243px;
     column-gap: 65px;
-
-    // @media (max-width: $tablet-max-width) {
-    //   column-count: 1;
-    // }
   }
 
   &--hide {
@@ -257,7 +252,7 @@
   }
 }
 
-// у Оли спросить
+// TODO: у Оли спросить
 .site-footer__info-list:first-child {
   @media (max-width: $tablet-max-width) {
     display: none;

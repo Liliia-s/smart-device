@@ -192,12 +192,13 @@
             <input type="tel" name="tel" id="field-tel" minlength="22" class="form__input" placeholder="Телефон" required>
           </div>
           <div class="form__textarea-wrapper">
-            <textarea name="question" class="form__textarea" placeholder="Ваш вопрос" required></textarea>
+            <label class="visually-hidden" for="textarea">Напишите Ваш вопрос</label>
+            <textarea name="question" id="textarea" class="form__textarea" placeholder="Ваш вопрос" required></textarea>
           </div>
           <div class="form__wrapper">
             <button type="submit" class="form__btn btn">Задать вопрос</button>
             <div class="form__agreement">
-              <input class="form__input-agreement visually-hidden" type="checkbox" name="agreement" id="check-agreement" checked="checked">
+              <input class="form__input-agreement visually-hidden" type="checkbox" name="agreement" id="check-agreement" checked="checked" required>
               <label class="form__agreement-name" for="check-agreement">Я согласен на обработку персональных данных</label>
             </div>
           </div>
@@ -305,12 +306,13 @@
       <input type="tel" name="tel" id="field-tel-modal" minlength="22" class="form__input form__input--modal" placeholder="Телефон" required>
     </div>
     <div class="form__textarea-wrapper form__textarea-wrapper--modal">
-      <textarea name="question" class="form__textarea form__textarea--modal" placeholder="Ваш вопрос" required></textarea>
+      <label class="visually-hidden" for="textarea-modal">Напишите Ваш вопрос</label>
+      <textarea name="question" id="textarea-modal" class="form__textarea form__textarea--modal" placeholder="Ваш вопрос" required></textarea>
     </div>
     <div class="form__wrapper form__wrapper--modal">
       <button type="submit" class="form__btn btn form__btn--modal">Отправить</button>
       <div class="form__agreement form__agreement--modal">
-        <input class="form__input-agreement visually-hidden" type="checkbox" name="agreement-modal" id="check-agreement-modal" checked="checked">
+        <input class="form__input-agreement visually-hidden" type="checkbox" name="agreement-modal" id="check-agreement-modal" checked="checked" required>
         <label class="form__agreement-name form__agreement-name--modal" for="check-agreement">Я согласен на обработку персональных данных</label>
       </div>
     </div>
@@ -319,7 +321,7 @@
     </button>
   </form>
   <div class="overlay"></div>
-  <script src="js/vendor.min.js"></script>
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 

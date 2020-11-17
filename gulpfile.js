@@ -68,8 +68,7 @@ gulp.task('sprite', function () {
 gulp.task('js', function () {
   return pipeline(
       gulp.src(['source/js/*.js', '!source/js/main.js']),
-      jsmerge('vendor.min.js'),
-      jsmin(),
+      jsmerge('vendor.js'),
       gulp.dest('build/js')
   );
 });

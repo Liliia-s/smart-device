@@ -188,7 +188,8 @@ body {
   font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   color: #666666;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  overflow-x: hidden; }
 
 img {
   display: block;

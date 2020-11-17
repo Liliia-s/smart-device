@@ -4,7 +4,6 @@
   padding-top: 175px;
   padding-right: 177px;
   padding-bottom: 103px;
-  // background: url("../../img/board-desk.png") no-repeat;
 
   @media (max-width: $desktop-max-width-2) {
     justify-content: space-evenly;
@@ -36,19 +35,14 @@
     content: "";
     top: 41px;
     right: -207px;
-    // width: 465px;
   }
 
   @media (max-width: $mobile-max-width) {
     position: static;
-    // top: 38px;
-    // right: 0;
-    // z-index: -1;
   }
 }
 
 .promo__desc-wrapper {
-  // position: relative;
   margin-right: auto;
   padding-top: 56px;
 
@@ -140,7 +134,6 @@
   display: block;
   width: 407px;
   margin-left: 94px;
-  // margin-bottom: 130px;
   padding-bottom: 17px;
   font-size: 16px;
   line-height: 18.75px;
@@ -179,10 +172,6 @@
 }
 
 .promo__scroll-down {
-  // position: absolute;
-  // content: "";
-  // bottom: 0;
-  // left: 0;
   display: inline-block;
   vertical-align: bottom;
   font-size: 14px;
