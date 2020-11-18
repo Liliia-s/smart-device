@@ -1430,7 +1430,7 @@ html {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 50;
+    z-index: 1000;
     display: block;
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -1712,7 +1712,7 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.5); }
   .overlay--show {
     display: block; }
