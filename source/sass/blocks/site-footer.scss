@@ -137,6 +137,10 @@
   text-transform: uppercase;
   color: $color-black;
   padding-bottom: 26px;
+
+  @media (max-width: $mobile-max-width) {
+    cursor: pointer;
+  }
 }
 
 .site-footer__list li,

@@ -241,24 +241,6 @@ html {
   font-display: swap;
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff"); }
 
-@media (min-width: 1920px) and (max-width: 1920px) {
-  body {
-    background: url("../img/desk.jpg") no-repeat;
-    min-height: 4066px;
-    opacity: 0.2; } }
-
-@media (min-width: 768px) and (max-width: 769px) {
-  body {
-    background: url("../img/tab.jpg") no-repeat;
-    min-height: 4047px;
-    opacity: 0.2; } }
-
-@media (max-width: 320px) {
-  body {
-    background: url("../img/mob1.jpg") no-repeat;
-    min-height: 4869px;
-    opacity: 0.2; } }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -829,6 +811,9 @@ html {
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 26px; }
+  @media (max-width: 767px) {
+    .site-footer__nav-item p {
+      cursor: pointer; } }
 
 .site-footer__list li,
 .site-footer__item a {
