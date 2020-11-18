@@ -241,6 +241,24 @@ html {
   font-display: swap;
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff"); }
 
+@media (min-width: 1920px) and (max-width: 1920px) {
+  body {
+    background: url("../img/desk.jpg") no-repeat;
+    min-height: 4066px;
+    opacity: 0.2; } }
+
+@media (min-width: 768px) and (max-width: 769px) {
+  body {
+    background: url("../img/tab.jpg") no-repeat;
+    min-height: 4047px;
+    opacity: 0.2; } }
+
+@media (max-width: 320px) {
+  body {
+    background: url("../img/mob1.jpg") no-repeat;
+    min-height: 4869px;
+    opacity: 0.2; } }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -264,10 +282,8 @@ html {
       padding: 0 15px; } }
 
 .site-header {
-  position: relative;
   padding-top: 33px;
-  background: url("../img/promo-back.png") #1b2d37 repeat-x;
-  z-index: -100; }
+  background: url("../img/promo-back.png") #1b2d37 repeat-x; }
   @media (max-width: 1023px) {
     .site-header {
       padding-top: 20px; } }
@@ -276,7 +292,8 @@ html {
       padding-top: 16px; } }
 
 .site-header__promo {
-  position: relative; }
+  position: relative;
+  z-index: 50; }
   .site-header__promo::before {
     position: absolute;
     content: "";
@@ -302,6 +319,8 @@ html {
         background-size: contain; } }
 
 .site-header__wrapper {
+  position: relative;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

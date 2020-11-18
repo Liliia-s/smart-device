@@ -1,42 +1,6 @@
 'use strict';
 
 (function () {
-  var inputTel = document.getElementById('field-tel');
-  var inputTelModal = document.getElementById('field-tel-modal');
-  var MIN_TITLE_LENGTH = 22;
-
-  var phoneMask = function (tel) {
-    window.iMask.phone(tel, {
-      mask: '+{7} (000) 000 - 00 - 00',
-    });
-  };
-
-  var onInputTel = function (tel) {
-    var numberLength = tel.value.length;
-
-    if (numberLength < MIN_TITLE_LENGTH) {
-      tel.setCustomValidity('Введите пожалуйста 10 цифр номера телефона.');
-    } else {
-      tel.setCustomValidity('');
-    }
-    tel.reportValidity();
-  };
-
-  var onInputTelForm = function () {
-    phoneMask(inputTel);
-    onInputTel(inputTel);
-  };
-
-  var onInputTelModal = function () {
-    phoneMask(inputTelModal);
-    onInputTel(inputTelModal);
-  };
-
-  inputTel.addEventListener('input', onInputTelForm);
-  inputTelModal.addEventListener('input', onInputTelModal);
-})();
-
-(function () {
   var KEY_CODE_ESC = 27;
   var btnCallback = document.querySelector('.site-header__btn-callback');
   var modalCallback = document.querySelector('.form--modal');
@@ -90,30 +54,4 @@
   btnCallbackClose.addEventListener('click', onBtnCallbackCloseClick);
   overlay.addEventListener('click', onOverlayClick);
   document.addEventListener('keydown', modalEscKeydown);
-})();
-
-(function () {
-  var titles = document.querySelectorAll('.site-footer__menu-title, .site-footer__contacts-title');
-  var contentLists = document.querySelectorAll('.site-footer__list');
-
-  var hideLists = function () {
-    contentLists.forEach(function (list) {
-      list.classList.add('site-footer__list--hide');
-    });
-  };
-
-  hideLists();
-
-  titles.forEach(function (title) {
-    title.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      var list = title.nextElementSibling;
-
-      if (list.classList.contains('site-footer__list--active')) {
-        list.classList.toggle('site-footer__list--active');
-      } else {
-        list.classList.toggle('site-footer__list--active');
-      }
-    });
-  });
 })();

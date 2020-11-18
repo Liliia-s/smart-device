@@ -1,8 +1,6 @@
 .site-header {
-  position: relative;
   padding-top: 33px;
   background: url("../img/promo-back.png") $color-black3 repeat-x;
-  z-index: -100;
 
   @media (max-width: $tablet-max-width) {
     padding-top: 20px;
@@ -15,6 +13,7 @@
 
 .site-header__promo {
   position: relative;
+  z-index: 50;
 
   &::before {
     position: absolute;
@@ -45,6 +44,8 @@
 }
 
 .site-header__wrapper {
+  position: relative;
+  z-index: 100;
   display: flex;
   align-items: center;
 }
