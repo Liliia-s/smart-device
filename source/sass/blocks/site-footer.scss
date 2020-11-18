@@ -128,6 +128,14 @@
       padding-top: 30px;
     }
   }
+
+  &--indents {
+    @media (max-width: $mobile-max-width) {
+      @include reset-indent;
+      width: 100%;
+      border-bottom: 1px solid rgba($color-grey2, 0.2);
+    }
+  }
 }
 
 .site-footer__nav-item ul {
@@ -143,9 +151,33 @@
   text-transform: uppercase;
   color: $color-black;
   padding-bottom: 26px;
+}
 
-  @media (max-width: $mobile-max-width) {
-    cursor: pointer;
+.site-footer__title {
+  &--indents {
+    @media (max-width: $mobile-max-width) {
+      position: relative;
+      width: 100%;
+      padding: 29px 70px 1px 15px;
+      cursor: pointer;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 29px;
+        right: 17px;
+        width: 16px;
+        height: 16px;
+        background: url("../img/plus.svg") no-repeat;
+      }
+    }
+  }
+
+  &--minus {
+    &::after {
+      top: 36px;
+      background: url("../img/minus.svg") no-repeat;
+    }
   }
 }
 
@@ -168,7 +200,7 @@
   }
 }
 
-.site-footer__list {
+.site-footer__nav-item .site-footer__list {
   &--menu {
     column-count: 2;
     column-width: 243px;
@@ -184,6 +216,7 @@
   &--active {
     @media (max-width: $mobile-max-width) {
       display: block;
+      padding: 0 15px 23px 15px;
     }
   }
 }
@@ -262,7 +295,6 @@
   }
 }
 
-// TODO: у Оли спросить
 .site-footer__info-list:first-child {
   @media (max-width: $tablet-max-width) {
     display: none;
