@@ -159,15 +159,17 @@
   }
 }
 
-.promo__btn-text1 {
-  @media (max-width: $mobile-max-width) {
-    display: none;
+.promo__btn-consultation span {
+  &:first-child {
+    @media (max-width: $mobile-max-width) {
+      display: none;
+    }
   }
-}
 
-.promo__btn-text2 {
-  @media (min-width: $tablet-width) {
-    display: none;
+  &:first-child + span {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -177,7 +179,6 @@
   font-size: 14px;
   line-height: 15.68px;
   color: rgba($color-white, 0.5);
-  // transform: translate(-127px, -37px) rotate(-90deg);
   transform: rotate(-90deg) translate(-127px, -39px);
 
   &:hover,

@@ -47,8 +47,16 @@
 }
 
 .site-footer__wrapper > p {
+  margin: 0;
+  margin-right: auto;
+
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-right: 0;
+    padding-bottom: 32px;
   }
 }
 
@@ -63,16 +71,6 @@
   @media (max-width: $mobile-max-width) {
     margin-right: 0;
     padding-bottom: 25px;
-  }
-}
-
-.site-footer__years-company {
-  margin: 0;
-  margin-right: auto;
-
-  @media (max-width: $mobile-max-width) {
-    margin-right: 0;
-    padding-bottom: 32px;
   }
 }
 
@@ -170,6 +168,14 @@
         height: 16px;
         background: url("../img/plus.svg") no-repeat;
       }
+
+      &:hover {
+        color: $color-blue-light;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -203,7 +209,7 @@
 .site-footer__nav-item .site-footer__list {
   &--menu {
     column-count: 2;
-    column-width: 243px;
+    column-width: 235px;
     column-gap: 65px;
   }
 
@@ -216,7 +222,7 @@
   &--active {
     @media (max-width: $mobile-max-width) {
       display: block;
-      padding: 0 15px 23px 15px;
+      padding: 5px 18px 26px 15px;
     }
   }
 }

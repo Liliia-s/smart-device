@@ -26,7 +26,7 @@
   }
 }
 
-.logo__title {
+.logo__tagline-wrapper > p {
   @include reset-margin;
   padding-bottom: 5px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
@@ -35,16 +35,18 @@
   font-weight: 700;
   color: $color-white;
 
-  &--black {
-    color: $color-black2;
+  &:first-child + p {
+    @include reset-margin;
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 500;
+    color: $color-grey;
   }
 }
 
-.logo__tagline {
-  @include reset-margin;
-  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 14.06px;
-  font-weight: 500;
-  color: $color-grey;
+.logo__tagline-wrapper .logo__title {
+  &--black {
+    color: $color-black2;
+  }
 }

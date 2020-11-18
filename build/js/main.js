@@ -5772,7 +5772,7 @@ svg4everybody();
     });
 
     siteFooterNavItems.forEach(function (item) {
-      item.classList.add('container', 'site-footer__nav-item--indents');
+      item.classList.add('site-footer__nav-item--indents');
     });
 
     siteFooterNav.classList.add('site-footer__nav-wrapper--indents');

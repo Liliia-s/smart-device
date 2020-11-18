@@ -466,7 +466,7 @@ html {
   .logo__tagline-wrapper--hide {
     display: none; } }
 
-.logo__title {
+.logo__tagline-wrapper > p {
   margin: 0;
   padding-bottom: 5px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
@@ -474,16 +474,16 @@ html {
   line-height: 29.3px;
   font-weight: 700;
   color: #ffffff; }
-  .logo__title--black {
-    color: #203c42; }
+  .logo__tagline-wrapper > p:first-child + p {
+    margin: 0;
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 500;
+    color: #788891; }
 
-.logo__tagline {
-  margin: 0;
-  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 14.06px;
-  font-weight: 500;
-  color: #788891; }
+.logo__tagline-wrapper .logo__title--black {
+  color: #203c42; }
 
 .btn {
   padding: 16px 18px 11px 18px;
@@ -651,11 +651,11 @@ html {
       margin: 0 auto; } }
 
 @media (max-width: 767px) {
-  .promo__btn-text1 {
+  .promo__btn-consultation span:first-child {
     display: none; } }
 
 @media (min-width: 768px) {
-  .promo__btn-text2 {
+  .promo__btn-consultation span:first-child + span {
     display: none; } }
 
 .promo__scroll-down {
@@ -732,9 +732,16 @@ html {
               justify-content: center;
       padding-bottom: 47px; } }
 
-@media (min-width: 1024px) {
-  .site-footer__wrapper > p {
-    display: none; } }
+.site-footer__wrapper > p {
+  margin: 0;
+  margin-right: auto; }
+  @media (min-width: 1024px) {
+    .site-footer__wrapper > p {
+      display: none; } }
+  @media (max-width: 767px) {
+    .site-footer__wrapper > p {
+      margin-right: 0;
+      padding-bottom: 32px; } }
 
 .site-footer__logo-wrapper {
   padding-bottom: 55px; }
@@ -746,14 +753,6 @@ html {
     .site-footer__logo-wrapper {
       margin-right: 0;
       padding-bottom: 25px; } }
-
-.site-footer__years-company {
-  margin: 0;
-  margin-right: auto; }
-  @media (max-width: 767px) {
-    .site-footer__years-company {
-      margin-right: 0;
-      padding-bottom: 32px; } }
 
 .site-footer__nav-wrapper {
   display: -webkit-box;
@@ -836,7 +835,11 @@ html {
       right: 17px;
       width: 16px;
       height: 16px;
-      background: url("../img/plus.svg") no-repeat; } }
+      background: url("../img/plus.svg") no-repeat; }
+    .site-footer__title--indents:hover {
+      color: #00b2ff; }
+    .site-footer__title--indents:active {
+      opacity: 0.5; } }
 
 .site-footer__title--minus::after {
   top: 36px;
@@ -861,9 +864,9 @@ html {
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
-  -webkit-column-width: 243px;
-     -moz-column-width: 243px;
-          column-width: 243px;
+  -webkit-column-width: 235px;
+     -moz-column-width: 235px;
+          column-width: 235px;
   -webkit-column-gap: 65px;
      -moz-column-gap: 65px;
           column-gap: 65px; }
@@ -875,7 +878,7 @@ html {
 @media (max-width: 767px) {
   .site-footer__nav-item .site-footer__list--active {
     display: block;
-    padding: 0 15px 23px 15px; } }
+    padding: 5px 18px 26px 15px; } }
 
 .site-footer__info-wrapper {
   display: -webkit-box;
@@ -946,6 +949,7 @@ html {
     display: none; } }
 
 .years-company {
+  margin: 0;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -1055,6 +1059,10 @@ html {
     .about-company__advantages-list li:nth-child(2n) {
       margin-right: 30px; } }
 
+@media (max-width: 767px) {
+  .about-company__advantages-list li:first-child + li article {
+    padding-right: 13px; } }
+
 .about-company__history {
   position: relative;
   padding-bottom: 111px;
@@ -1068,7 +1076,7 @@ html {
       padding-left: 188px; } }
   @media (max-width: 767px) {
     .about-company__history {
-      padding-bottom: 66px;
+      padding-bottom: 63px;
       padding-left: 0; } }
   .about-company__history::before {
     position: absolute;
@@ -1096,14 +1104,14 @@ html {
 .about-company__history p {
   margin: 0; }
 
-.about-company__name {
+.about-company h3 {
   padding-bottom: 21px; }
   @media (max-width: 1023px) {
-    .about-company__name {
+    .about-company h3 {
       padding-bottom: 27px; } }
   @media (max-width: 767px) {
-    .about-company__name {
-      padding-bottom: 19px; } }
+    .about-company h3 {
+      padding-bottom: 25px; } }
 
 .about-company__desc-wrapper {
   max-width: 980px;
@@ -1124,7 +1132,7 @@ html {
         padding-bottom: 24px; } }
     @media (max-width: 767px) {
       .about-company__desc-wrapper p:not(:last-child) {
-        padding-bottom: 44px; } }
+        padding-bottom: 46px; } }
 
 @media (max-width: 1023px) {
   .about-company__desc-fragment {
@@ -1138,6 +1146,20 @@ html {
   border-color: #00b2ff; }
   .about-company__btn:hover, .about-company__btn:focus {
     color: #ffffff; }
+
+.advantages-card p:first-of-type {
+  padding-bottom: 23px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 33.75px;
+  color: #00b2ff; }
+  @media (max-width: 1023px) {
+    .advantages-card p:first-of-type {
+      padding-bottom: 12px; } }
+  @media (max-width: 767px) {
+    .advantages-card p:first-of-type {
+      font-size: 20px;
+      line-height: 28.13px; } }
 
 .advantages-card {
   width: 570px;
@@ -1161,13 +1183,11 @@ html {
     .advantages-card {
       width: 100%;
       padding-right: 18px;
-      padding-bottom: 18px;
+      padding-bottom: 27px;
       padding-left: 23px; } }
   .advantages-card:hover {
     background-color: #00b2ff; }
-  .advantages-card:hover .advantages-card__name {
-    color: #ffffff; }
-  .advantages-card:hover .advantages-card__desc {
+  .advantages-card:hover p {
     color: #ffffff; }
   .advantages-card:hover svg {
     fill: #ffffff; }
@@ -1179,24 +1199,10 @@ html {
       margin-bottom: 0; } }
   @media (max-width: 767px) {
     .advantages-card svg {
-      margin-bottom: 9px; } }
+      margin-bottom: 7px; } }
 
 .advantages-card p {
   margin: 0; }
-
-.advantages-card__name {
-  padding-bottom: 23px;
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
-  font-size: 24px;
-  line-height: 33.75px;
-  color: #00b2ff; }
-  @media (max-width: 1023px) {
-    .advantages-card__name {
-      padding-bottom: 12px; } }
-  @media (max-width: 767px) {
-    .advantages-card__name {
-      font-size: 20px;
-      line-height: 28.13px; } }
 
 .subtitle {
   margin: 0;
@@ -1211,7 +1217,7 @@ html {
   @media (max-width: 767px) {
     .subtitle {
       font-size: 28px;
-      line-height: 39.38 px; } }
+      line-height: 39.38px; } }
 
 .products {
   padding-top: 88px;
@@ -1221,7 +1227,7 @@ html {
       padding-top: 48px; } }
   @media (max-width: 767px) {
     .products {
-      padding-top: 44px; } }
+      padding-top: 50px; } }
 
 .products h3 {
   padding-bottom: 51px;
@@ -1237,7 +1243,7 @@ html {
       text-align: left; } }
   @media (max-width: 767px) {
     .products h3 {
-      padding-bottom: 29px; } }
+      padding-bottom: 42px; } }
 
 .products ul {
   margin: 0;
@@ -1298,7 +1304,7 @@ html {
       padding-top: 46px; } }
   @media (max-width: 767px) {
     .product-card a {
-      padding-top: 26px;
+      padding-top: 25px;
       padding-left: 33px; } }
   .product-card a:hover p,
   .product-card a:focus p {
@@ -1372,7 +1378,7 @@ html {
       padding-bottom: 106px; } }
   @media (max-width: 767px) {
     .form-blank {
-      padding-top: 24px;
+      padding-top: 29px;
       padding-bottom: 43px; } }
 
 .form-blank__container {
@@ -1412,8 +1418,7 @@ html {
   margin-right: 127px; }
   @media (max-width: 1919px) {
     .form-blank__wrapper {
-      margin: 0 auto;
-      margin-right: 25px; } }
+      margin: 0 auto; } }
   @media (max-width: 767px) {
     .form-blank__wrapper {
       margin-right: 15px; } }
@@ -1532,7 +1537,7 @@ html {
       padding-bottom: 17px; } }
   @media (max-width: 767px) {
     .form h3 {
-      padding-bottom: 8px; } }
+      padding-bottom: 13px; } }
 
 .form .form__title--modal {
   padding-bottom: 14px;
@@ -1623,7 +1628,7 @@ html {
       padding-bottom: 37px; } }
   @media (max-width: 767px) {
     .form__textarea-wrapper {
-      padding-bottom: 24px; } }
+      padding-bottom: 26px; } }
   .form__textarea-wrapper--modal {
     padding-bottom: 24px; }
 
@@ -1715,8 +1720,8 @@ html {
     content: "";
     width: 16px;
     height: 16px;
-    top: 3px;
-    left: 3px;
+    top: 1px;
+    left: 1px;
     border: 1px solid #ffffff; }
 
 .form__agreement .form__agreement-name--modal {

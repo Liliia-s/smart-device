@@ -1,4 +1,5 @@
 .years-company {
+  @include reset-margin;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
