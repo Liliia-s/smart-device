@@ -1702,7 +1702,7 @@ html {
   height: 50px;
   top: 3px;
   right: 3px;
-  background: url("../../img/modal-close.svg") 50% 50% no-repeat;
+  background: url("../img/modal-close.svg") 50% 50% no-repeat;
   border: 0; }
 
 .overlay {
