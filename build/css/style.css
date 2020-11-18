@@ -777,6 +777,10 @@ html {
               flex-direction: column;
       padding-top: 29px;
       padding-bottom: 157px; } }
+  @media (max-width: 767px) {
+    .site-footer__nav-wrapper--indents {
+      margin: 0;
+      padding: 0; } }
 
 .site-footer__nav-item--menu {
   width: 56%;

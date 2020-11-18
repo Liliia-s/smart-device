@@ -95,6 +95,12 @@
     padding-top: 29px;
     padding-bottom: 157px;
   }
+
+  &--indents {
+    @media (max-width: $mobile-max-width) {
+      @include reset-indent;
+    }
+  }
 }
 
 .site-footer__nav-item {
