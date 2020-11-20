@@ -1704,8 +1704,8 @@ html {
 .form__agreement input:checked + .form__agreement-name::after {
   position: absolute;
   content: "";
-  top: 8px;
-  left: 7px;
+  top: 6px;
+  left: 5px;
   width: 9px;
   height: 6px;
   background: url("../img/tick.svg") no-repeat; }
