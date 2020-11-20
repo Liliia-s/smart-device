@@ -1,6 +1,7 @@
 .site-header {
   padding-top: 33px;
   background: url("../img/promo-back.png") $color-black3 repeat-x;
+  overflow-x: hidden;
 
   @media (max-width: $tablet-max-width) {
     padding-top: 20px;

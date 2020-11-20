@@ -265,7 +265,8 @@ html {
 
 .site-header {
   padding-top: 33px;
-  background: url("../img/promo-back.png") #1b2d37 repeat-x; }
+  background: url("../img/promo-back.png") #1b2d37 repeat-x;
+  overflow-x: hidden; }
   @media (max-width: 1023px) {
     .site-header {
       padding-top: 20px; } }
@@ -979,7 +980,8 @@ html {
 .about-company {
   position: relative;
   padding-top: 112px;
-  background: url("../img/polygon-big.svg") no-repeat 53% 38%, url("../img/triangle2.svg") no-repeat 98% 42%; }
+  background: url("../img/polygon-big.svg") no-repeat 53% 38%, url("../img/triangle2.svg") no-repeat 98% 42%;
+  overflow-x: hidden; }
   @media (max-width: 1919px) {
     .about-company {
       background: url("../img/polygon-big.svg") no-repeat -203% 37%; } }
@@ -1371,7 +1373,8 @@ html {
 .form-blank {
   padding-top: 94px;
   padding-bottom: 113px;
-  background-color: #00b2ff; }
+  background-color: #00b2ff;
+  overflow-x: hidden; }
   @media (max-width: 1919px) {
     .form-blank {
       padding-top: 80px;
