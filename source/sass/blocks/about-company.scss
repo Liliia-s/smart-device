@@ -3,7 +3,7 @@
   padding-top: 112px;
   background: url("../img/polygon-big.svg") no-repeat 53% 38%,
     url("../img/triangle2.svg") no-repeat 98% 42%;
-  overflow-x: hidden;
+  overflow: hidden;
 
 
   @media (max-width: $desktop-max-width-2) {
