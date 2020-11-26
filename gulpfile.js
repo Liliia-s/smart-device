@@ -99,7 +99,6 @@ gulp.task('copy', function () {
 gulp.task('update', function () {
   return gulp.src([
     'source/*.html',
-    'source/js/main.js'
   ], {
     base: 'source'
   })

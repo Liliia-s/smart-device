@@ -1,7 +1,7 @@
 .site-header {
   padding-top: 33px;
-  background: url("../img/promo-back.png") $color-black3 repeat-x;
-  overflow-x: hidden;
+  background: url("../img/promo-back.png") $color-black3 repeat;
+  overflow: hidden;
 
   @media (max-width: $tablet-max-width) {
     padding-top: 20px;
@@ -48,7 +48,7 @@
   position: relative;
   z-index: 100;
   display: flex;
-  align-items: center;
+  // align-items: center;
 }
 
 .site-header__logo-wrapper {
@@ -65,7 +65,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    padding-right: 138px;
+    padding-right: 151px;
   }
 
   &::before,
@@ -102,8 +102,9 @@
 
 .site-header__user-nav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  // flex-wrap: wrap;
+  // align-items: center;
+  padding-top: 3px;
 }
 
 .site-header__user-list {
@@ -111,6 +112,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 53px;
+  margin-left: 20px;
+  padding-top: 13px;
 
   @media (max-width: $desktop-max-width-2) {
     margin-right: 21px;
@@ -122,6 +125,8 @@
 }
 
 .site-header__user-item {
+  margin-bottom: 20px;
+
   &:not(:last-child) {
     margin-right: 71px;
 

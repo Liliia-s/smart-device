@@ -5763,46 +5763,46 @@ svg4everybody();
   var siteFooterNavItems = document.querySelectorAll('.site-footer__nav-item');
 
   var hideLists = function () {
-    contentLists.forEach(function (list) {
-      list.classList.add('site-footer__list--hide');
-    });
+    for (var i = 0; i < contentLists.length; i++) {
+      contentLists[i].classList.add('site-footer__list--hide');
+    }
 
-    titles.forEach(function (title) {
-      title.classList.add('site-footer__title--indents');
-    });
+    for (var j = 0; j < titles.length; j++) {
+      titles[j].classList.add('site-footer__title--indents');
+    }
 
-    siteFooterNavItems.forEach(function (item) {
-      item.classList.add('site-footer__nav-item--indents');
-    });
+    for (var k = 0; k < siteFooterNavItems.length; k++) {
+      siteFooterNavItems[k].classList.add('site-footer__nav-item--indents');
+    }
 
     siteFooterNav.classList.add('site-footer__nav-wrapper--indents');
   };
 
   hideLists();
 
-  titles.forEach(function (title) {
-    title.addEventListener('click', function (evt) {
+  for (var i = 0; i < titles.length; i++) {
+    titles[i].addEventListener('click', function (evt) {
       evt.preventDefault();
-      var list = title.nextElementSibling;
+      var list = titles[i].nextElementSibling;
 
-      contentLists.forEach(function (menu) {
+      for (var j = 0; j < contentLists.length; j++) {
         if (!list.classList.contains('site-footer__list--active')) {
-          menu.classList.remove('site-footer__list--active');
-          menu.previousElementSibling.classList.remove('site-footer__title--minus');
+          contentLists[j].classList.remove('site-footer__list--active');
+          contentLists[j].previousElementSibling.classList.remove('site-footer__title--minus');
         } else {
           return;
         }
-      });
+      }
 
       if (list.classList.contains('site-footer__list--active')) {
         list.classList.remove('site-footer__list--active');
-        title.classList.toggle('site-footer__title--minus');
+        titles[i].classList.toggle('site-footer__title--minus');
       } else {
         list.classList.add('site-footer__list--active');
-        title.classList.toggle('site-footer__title--minus');
+        titles[i].classList.toggle('site-footer__title--minus');
       }
     });
-  });
+  }
 })();
 
 'use strict';

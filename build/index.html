@@ -21,14 +21,13 @@
   <header class="site-header">
     <div class="container">
       <div class="site-header__wrapper">
-        <div class="site-header__logo-wrapper logo">
-          <a class="logo-link logo-link--resize">
-            <img src="img/logo.svg" alt="Лого компании Smart Device" width="52" height="52">
+        <div class="site-header__logo-wrapper">
+          <a>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-header.svg">
+              <img src="img/logo-header-brain.svg" alt="Лого компании Smart Device">
+            </picture>
           </a>
-          <div class="logo__tagline-wrapper logo__tagline-wrapper--hide">
-            <p>Smart Device</p>
-            <p>умные технологии</p>
-          </div>
         </div>
         <div class="site-header__user-nav">
           <ul class="site-header__user-list">
@@ -47,7 +46,9 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="site-header__btn-callback btn">Заказать звонок</a>
+          <div>
+            <a href="#" class="site-header__btn-callback btn">Заказать звонок</a>
+          </div>
         </div>
       </div>
     </div>
@@ -204,14 +205,10 @@
     <div class="site-footer__user-wrapper">
       <div class="site-footer__container container">
         <div class="site-footer__wrapper container">
-          <div class="site-footer__logo-wrapper logo">
-            <a class="logo-link">
-              <img src="img/logo.svg" alt="Лого компании Smart Device" width="52" height="52">
+          <div class="site-footer__logo-wrapper">
+            <a>
+              <img src="img/logo-footer.svg" alt="Лого компании Smart Device" width="216" height="52">
             </a>
-            <div class="logo__tagline-wrapper">
-              <p class="logo__title logo__title--black">Service Device</p>
-              <p>умные технологии</p>
-            </div>
           </div>
           <p class="years-company">1999-2018 SD Service Devices</p>
           <div class="site-footer__social social">
@@ -265,11 +262,15 @@
             <p class="site-footer__title">Наш офис</p>
             <ul class="site-footer__list site-footer__list--contacts">
               <li class="site-footer__item site-footer__item--contacts">г. Мытищи, Олимпийский проспект, д.10</li>
-              <li class="site-footer__item site-footer__item--contacts">+7 (495) 589-40-50
+              <li class="site-footer__item site-footer__item--contacts">
+                <a href="tel:74955894050">+7 (495) 589-40-50</a>
               </li>
-              <li class="site-footer__item site-footer__item--contacts">+7 (925) 003-87-67
+              <li class="site-footer__item site-footer__item--contacts">
+                <a href="tel:79250038767">+7 (925) 003-87-67</a>
               </li>
-              <li class="site-footer__item site-footer__item--contacts">+7 (926) 926-080-79</li>
+              <li class="site-footer__item site-footer__item--contacts">
+                <a href="tel:792692608079">+7 (926) 926-080-79</a>
+              </li>
             </ul>
           </div>
         </div>
