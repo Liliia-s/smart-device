@@ -310,13 +310,16 @@ html {
 
 .site-header__logo-wrapper {
   position: relative;
+  width: 25%;
   margin-right: auto;
   padding-right: 156px; }
   @media (max-width: 1919px) {
     .site-header__logo-wrapper {
+      width: 30%;
       padding-right: 100px; } }
   @media (max-width: 1023px) {
     .site-header__logo-wrapper {
+      width: auto;
       padding-right: 400px; } }
   @media (max-width: 767px) {
     .site-header__logo-wrapper {
@@ -348,7 +351,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 75%;
   padding-top: 3px; }
+  @media (max-width: 1919px) {
+    .site-header__user-nav {
+      max-width: 70%; } }
 
 .site-header__user-list {
   margin: 0;
@@ -364,10 +371,14 @@ html {
   padding-top: 13px; }
   @media (max-width: 1919px) {
     .site-header__user-list {
-      margin-right: 21px; } }
+      margin-right: 21px;
+      padding-top: 12px; } }
   @media (max-width: 1023px) {
     .site-header__user-list {
       margin: 0; } }
+  @media (max-width: 767px) {
+    .site-header__user-list {
+      padding-top: 6px; } }
 
 .site-header__user-item {
   margin-bottom: 20px; }
@@ -482,7 +493,7 @@ html {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      padding-top: 59px;
+      padding-top: 55px;
       padding-bottom: 163px;
       padding-left: 88px; } }
   @media (max-width: 767px) {
@@ -494,7 +505,7 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding-top: 38px;
+      padding-top: 26px;
       padding-right: 0;
       padding-bottom: 70px;
       padding-left: 15px; } }
@@ -1003,6 +1014,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px; }
+  @media (min-width: 768px) and (max-width: 1919px) {
+    .about-company__advantages-list li {
+      width: 48%; } }
   @media (max-width: 767px) {
     .about-company__advantages-list li {
       margin-bottom: 20px; } }
@@ -1014,9 +1028,6 @@ html {
     @media (max-width: 767px) {
       .about-company__advantages-list li:not(:nth-child(2n)) {
         margin-right: 0; } }
-  @media (min-width: 1145px) and (max-width: 1919px) {
-    .about-company__advantages-list li:nth-child(2n) {
-      margin-right: 30px; } }
 
 @media (max-width: 767px) {
   .about-company__advantages-list li:first-child + li article {
@@ -1048,7 +1059,7 @@ html {
     background-size: contain; }
     @media (max-width: 1919px) {
       .about-company__history::before {
-        left: 43px; } }
+        left: 0; } }
     @media (max-width: 1023px) {
       .about-company__history::before {
         top: -1px;
@@ -1121,6 +1132,13 @@ html {
       line-height: 28.13px; } }
 
 .advantages-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 570px;
   min-height: 300px;
   padding-top: 40px;
@@ -1132,7 +1150,7 @@ html {
   border-left: 2px solid #00b2ff; }
   @media (max-width: 1919px) {
     .advantages-card {
-      width: 345px;
+      width: 100%;
       min-height: 232px;
       padding-top: 25px;
       padding-right: 20px;
@@ -1140,9 +1158,8 @@ html {
       padding-left: 26px; } }
   @media (max-width: 767px) {
     .advantages-card {
-      width: 100%;
       padding-right: 18px;
-      padding-bottom: 27px;
+      padding-bottom: 28px;
       padding-left: 23px; } }
   .advantages-card:hover {
     background-color: #00b2ff; }
@@ -1152,13 +1169,13 @@ html {
     fill: #ffffff; }
 
 .advantages-card svg {
-  margin-bottom: 10px; }
+  margin-bottom: 17px; }
   @media (max-width: 1023px) {
     .advantages-card svg {
-      margin-bottom: 0; } }
+      margin-bottom: 7px; } }
   @media (max-width: 767px) {
     .advantages-card svg {
-      margin-bottom: 7px; } }
+      margin-bottom: 12px; } }
 
 .advantages-card p {
   margin: 0; }
@@ -1720,3 +1737,26 @@ html {
     @media (max-width: 1023px) {
       .overlay--show {
         display: none; } }
+
+.overflow-hidden {
+  position: fixed;
+  overflow: hidden;
+  width: 100%; }
+
+@media (min-width: 1920px) and (max-width: 1920px) {
+  body {
+    background: url("../img/desk.jpg") no-repeat;
+    min-height: 4066px;
+    opacity: 0.2; } }
+
+@media (min-width: 768px) and (max-width: 769px) {
+  body {
+    background: url("../img/tab.jpg") no-repeat;
+    min-height: 4047px;
+    opacity: 0.2; } }
+
+@media (max-width: 320px) {
+  body {
+    background: url("../img/mob1.jpg") no-repeat;
+    min-height: 4869px;
+    opacity: 0.2; } }

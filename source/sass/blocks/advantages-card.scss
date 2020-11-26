@@ -17,6 +17,8 @@
 }
 
 .advantages-card {
+  display: flex;
+  flex-direction: column;
   width: 570px;
   min-height: 300px;
   padding-top: 40px;
@@ -28,7 +30,7 @@
   border-left: 2px solid $color-blue-light;
 
   @media (max-width: $desktop-max-width-2) {
-    width: 345px;
+    width: 100%;
     min-height: 232px;
     padding-top: 25px;
     padding-right: 20px;
@@ -37,9 +39,9 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    width: 100%;
+    // width: 100%;
     padding-right: 18px;
-    padding-bottom: 27px;
+    padding-bottom: 28px;
     padding-left: 23px;
   }
 
@@ -57,14 +59,14 @@
 }
 
 .advantages-card svg {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 
   @media (max-width: $tablet-max-width) {
-    margin-bottom: 0;
+    margin-bottom: 7px;
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 7px;
+    margin-bottom: 12px;
   }
 }
 

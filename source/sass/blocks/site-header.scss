@@ -53,14 +53,17 @@
 
 .site-header__logo-wrapper {
   position: relative;
+  width: 25%;
   margin-right: auto;
   padding-right: 156px;
 
   @media (max-width: $desktop-max-width-2) {
+    width: 30%;
     padding-right: 100px;
   }
 
   @media (max-width: $tablet-max-width) {
+    width: auto;
     padding-right: 400px;
   }
 
@@ -102,9 +105,14 @@
 
 .site-header__user-nav {
   display: flex;
+  max-width: 75%;
   // flex-wrap: wrap;
   // align-items: center;
   padding-top: 3px;
+
+  @media (max-width: $desktop-max-width-2) {
+    max-width: 70%;
+  }
 }
 
 .site-header__user-list {
@@ -117,10 +125,15 @@
 
   @media (max-width: $desktop-max-width-2) {
     margin-right: 21px;
+    padding-top: 12px;
   }
 
   @media (max-width: $tablet-max-width) {
     margin: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 6px;
   }
 }
 

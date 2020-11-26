@@ -71,6 +71,10 @@
   display: flex;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-max-width-2) {
+    width: 48%;
+  }
+
   @media (max-width: $mobile-max-width) {
     margin-bottom: 20px;
   }
@@ -87,11 +91,11 @@
     }
   }
 
-  &:nth-child(2n) {
-    @media (min-width: 1145px) and (max-width: $desktop-max-width-2) {
-      margin-right: 30px;
-    }
-  }
+  // &:nth-child(2n) {
+  //   @media (min-width: 1145px) and (max-width: $desktop-max-width-2) {
+  //     margin-right: 30px;
+  //   }
+  // }
 }
 
 .about-company__advantages-list li:first-child + li article {
@@ -132,9 +136,8 @@
 
 
     @media (max-width: $desktop-max-width-2) {
-      left: 43px;
+      left: 0;
     }
-
 
     @media (max-width: $tablet-max-width) {
       top: -1px;

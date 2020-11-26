@@ -5822,12 +5822,15 @@ svg4everybody();
   var hideElements = function () {
     modalCallback.classList.remove('form--show');
     overlay.classList.remove('overlay--show');
+    document.body.classList.remove('overflow-hidden');
+    document.body.removeAttribute('class');
   };
 
   var onBtnCallbackClick = function (evt) {
     evt.preventDefault();
     modalCallback.classList.add('form--show');
     overlay.classList.add('overlay--show');
+    document.body.classList.add('overflow-hidden');
 
     if (localStorage.getItem('name') === true && localStorage.getItem('phone') === true) {
       name.value = storageLogin;
