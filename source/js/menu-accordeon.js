@@ -27,23 +27,21 @@
   for (var i = 0; i < titles.length; i++) {
     titles[i].addEventListener('click', function (evt) {
       evt.preventDefault();
-      var list = titles[i].nextElementSibling;
+      var list = evt.target.nextElementSibling;
 
       for (var j = 0; j < contentLists.length; j++) {
         if (!list.classList.contains('site-footer__list--active')) {
           contentLists[j].classList.remove('site-footer__list--active');
           contentLists[j].previousElementSibling.classList.remove('site-footer__title--minus');
-        } else {
-          return;
         }
       }
 
       if (list.classList.contains('site-footer__list--active')) {
         list.classList.remove('site-footer__list--active');
-        titles[i].classList.toggle('site-footer__title--minus');
+        evt.target.classList.toggle('site-footer__title--minus');
       } else {
         list.classList.add('site-footer__list--active');
-        titles[i].classList.toggle('site-footer__title--minus');
+        evt.target.classList.toggle('site-footer__title--minus');
       }
     });
   }
