@@ -347,6 +347,9 @@ html {
       .site-header__logo-wrapper::after {
         top: 23px; } }
 
+.site-header__logo-wrapper a {
+  cursor: default; }
+
 .site-header__user-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,6 +725,9 @@ html {
     .site-footer__logo-wrapper {
       margin-right: 0;
       padding-bottom: 25px; } }
+
+.site-footer__logo-wrapper a {
+  cursor: default; }
 
 .site-footer__nav-wrapper {
   display: -webkit-box;

@@ -103,6 +103,10 @@
   }
 }
 
+.site-header__logo-wrapper a {
+  cursor: default;
+}
+
 .site-header__user-nav {
   display: flex;
   max-width: 75%;
